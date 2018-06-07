@@ -1,15 +1,21 @@
 @import 'colors';
 
 .App {
-  background: linear-gradient( $color0, $color0, $colorB );
+  background: linear-gradient( $color000, $color0, $colorB );
   text-align: center;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
+}
+
+.logos--container {
+  position: relative;
 }
 
 %App-logo {
   position: absolute;
   left: 0vw;
+  top: -25em;
   z-index: 1;
 }
 
@@ -30,44 +36,63 @@
   animation: App-logo-spin-c infinite 10s linear;
 }
 
-
-.App-header {
-  height: 150px;
-  padding: 20px;
+.App-title--white {
+  position: absolute;
+  font-size: 4em;
   color: white;
-  z-index: 2;
+  margin: 0;
+  top: 0;
+  left: 24.5%;
+  animation: App-title-shift infinite 20s linear;
 }
 
 .App-title {
   font-size: 4em;
   position: relative;
-  top: 10vh;
-  z-index: 5;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
+  z-index: 4;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px white;
+  mix-blend-mode: overlay;
+  background: $color0;
+  height: 2.5em;
+  margin: 0;
 }
 
 .App-intro {
   font-size: large;
 }
 
+.windows--neon {
+  position: relative;
+  border: 2px solid $colorE;
+  border-radius: 5px;
+  background-color: $color0;
+}
+
+.transparent {
+  opacity: 0.9;
+}
+
+.left {
+  left: 0vw;
+}
+
+.right {
+  right: 0vw;
+}
+
 .cart {
+  position: absolute;
   display: inline-block;
   width: 10vw;
   vertical-align: top;
-  margin-left: 2vw;
   z-index: 2;
-}
-
-.logos--container {
-  z-index: 1;
-  position: relative;
-  top: -45vh;
 }
 
 nav {
   background-color: $color0;
-  margin: 2vh;
+  z-index: 2;
+  position: relative;
 }
 
 .product--imageSize {
@@ -79,18 +104,17 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  z-index: 2;
 }
 
 .shopPage--parent {
+  position: absolute;
   display: inline-block;
-  width: 85vw;
+  width: 70vw;
   height: 60vh;
-}
-
-.windows--neon {
-  border: 2px solid $colorE;
-  border-radius: 5px;
-  background-color: $color0;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @keyframes App-logo-spin-a {
@@ -115,4 +139,11 @@ nav {
   50%  { opacity: .33 }
   100% { transform: rotate(630deg); 
          opacity: .5  }
+}
+
+@keyframes App-title-shift {
+  0% { left: 24.5% }
+  25% { left: 25.25% }
+  75% { left: 24% }
+  100% { left: 24.5% }
 }

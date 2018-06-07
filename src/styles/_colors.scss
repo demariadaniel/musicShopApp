@@ -1,5 +1,6 @@
 $color1 : #E6F5F7;
 $color0 : #222;
+$color000 : #000;
 $colorA : magenta;
 $colorB : darkblue ;
 $colorC : #51BFB5 ;
@@ -14,6 +15,10 @@ $colorG : deeppink;
 
 .text--color0 {
   color: $color0
+}
+
+.text--color000 {
+  color: $color000
 }
 
 .text--colorA {

@@ -4,6 +4,9 @@
 .text--color0 {
   color: #222; }
 
+.text--color000 {
+  color: #000; }
+
 .text--colorA {
   color: magenta; }
 
@@ -26,14 +29,19 @@
   color: deeppink; }
 
 .App {
-  background: linear-gradient(#222, #222, darkblue);
+  background: linear-gradient(#000, #222, darkblue);
   text-align: center;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
+
+.logos--container {
+  position: relative; }
 
 .App-logo-A, .App-logo-B, .App-logo-C {
   position: absolute;
   left: 0vw;
+  top: -25em;
   z-index: 1; }
 
 .App-logo-A {
@@ -47,36 +55,55 @@
   opacity: .33;
   animation: App-logo-spin-c infinite 10s linear; }
 
-.App-header {
-  height: 150px;
-  padding: 20px;
+.App-title--white {
+  position: absolute;
+  font-size: 4em;
   color: white;
-  z-index: 2; }
+  margin: 0;
+  top: 0;
+  left: 24.5%;
+  animation: App-title-shift infinite 20s linear; }
 
 .App-title {
   font-size: 4em;
   position: relative;
-  top: 10vh;
-  z-index: 5; }
+  z-index: 4;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px white;
+  mix-blend-mode: overlay;
+  background: #222;
+  height: 2.5em;
+  margin: 0; }
 
 .App-intro {
   font-size: large; }
 
+.windows--neon {
+  position: relative;
+  border: 2px solid darkmagenta;
+  border-radius: 5px;
+  background-color: #222; }
+
+.transparent {
+  opacity: 0.9; }
+
+.left {
+  left: 0vw; }
+
+.right {
+  right: 0vw; }
+
 .cart {
+  position: absolute;
   display: inline-block;
   width: 10vw;
   vertical-align: top;
-  margin-left: 2vw;
   z-index: 2; }
-
-.logos--container {
-  z-index: 1;
-  position: relative;
-  top: -45vh; }
 
 nav {
   background-color: #222;
-  margin: 2vh; }
+  z-index: 2;
+  position: relative; }
 
 .product--imageSize {
   height: 30vh; }
@@ -85,17 +112,17 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  z-index: 2; }
 
 .shopPage--parent {
+  position: absolute;
   display: inline-block;
-  width: 85vw;
-  height: 60vh; }
-
-.windows--neon {
-  border: 2px solid darkmagenta;
-  border-radius: 5px;
-  background-color: #222; }
+  width: 70vw;
+  height: 60vh;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%); }
 
 @keyframes App-logo-spin-a {
   0% {
@@ -126,3 +153,13 @@ nav {
   100% {
     transform: rotate(630deg);
     opacity: .5; } }
+
+@keyframes App-title-shift {
+  0% {
+    left: 24.5%; }
+  25% {
+    left: 25.25%; }
+  75% {
+    left: 24%; }
+  100% {
+    left: 24.5%; } }
