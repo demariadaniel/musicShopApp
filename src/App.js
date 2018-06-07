@@ -16,9 +16,15 @@ class App extends Component {
           <img src={logoB} className="App-logo-B" alt="logo" />
           <img src={logoC} className="App-logo-C" alt="logo" />
         </div>
-        <header className="App-header">
-          <h1 className="App-title">Welcome to the Shop</h1>
-        </header>
+          <h1 className="App-title">
+            Welcome to the Shop
+          </h1>
+          <h1 className="App-title--white">
+            Welcome to the Shop
+          </h1>
+          <h2 className="App-title--subtitle">
+            Your one stop for everything you need
+          </h2>
         <div>
           <Switch>
             <Route 

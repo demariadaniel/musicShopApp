@@ -6,7 +6,7 @@ const ShopPage = ({ inventory, match, category }) => (
     <h3 className="text--color1">
       {category}
     </h3>
-    <div class="shopPage--container">
+    <div class="shopPage--container transparent">
       {inventory.map((item, i) => (
         <Link to={`${match.url}/${i}`}>
           <div class="windows--neon">

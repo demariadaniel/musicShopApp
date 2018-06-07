@@ -69,11 +69,20 @@
   position: relative;
   z-index: 4;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px white;
+  -webkit-text-stroke: 2px #E6F5F7;
   mix-blend-mode: overlay;
   background: #222;
   height: 2.5em;
   margin: 0; }
+
+.App-title--subtitle {
+  margin: 0;
+  -webkit-text-fill-color: #E6F5F7;
+  mix-blend-mode: difference;
+  background: #222;
+  position: relative;
+  z-index: 4;
+  top: -1.25em; }
 
 .App-intro {
   font-size: large; }

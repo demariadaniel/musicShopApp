@@ -22,7 +22,8 @@ export default class Shop extends Component {
             </Link>
           ))}
         </nav>
-        <div className="shopPage--parent windows--neon">
+        <Cart className="left" />
+        <div className="shopPage--parent windows--neon transparent">
           <Switch>
             {this.state.products.map(product => (
               <Route
@@ -49,7 +50,7 @@ export default class Shop extends Component {
             ))}
           </Switch>
         </div>
-        <Cart />
+        <Cart className="right" />
       </div>
     );
   }
