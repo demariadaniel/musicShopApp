@@ -121,7 +121,7 @@
   background: linear-gradient(#000, #222, darkblue);
   text-align: center;
   width: 100vw;
-  height: 100vh;
+  min-height: 125vh;
   overflow: hidden; }
 
 .App-intro {
@@ -174,7 +174,12 @@ nav {
   position: absolute;
   display: inline-block;
   width: 70vw;
-  height: 60vh;
+  min-height: 60vh;
   z-index: 2;
   left: 50%;
   transform: translateX(-50%); }
+
+.product--window {
+  margin: 0.5em 1em;
+  padding: 0.5em;
+  width: 10vw; }

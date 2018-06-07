@@ -9,7 +9,7 @@ const ShopPage = ({ inventory, match, category }) => (
     <div class="shopPage--container transparent">
       {inventory.map((item, i) => (
         <Link to={`${match.url}/${i}`}>
-          <div class="windows--neon">
+          <div class="windows--neon product--window">
             <p>
               {item.brand} {item.model}
             </p>
