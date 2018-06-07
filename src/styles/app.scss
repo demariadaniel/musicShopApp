@@ -1,10 +1,10 @@
 @import 'colors';
 
 .App {
+  background: linear-gradient( $color0, $color0, $colorB );
   text-align: center;
   width: 100vw;
   height: 100vh;
-  z-index: 2;
 }
 
 %App-logo {
@@ -32,14 +32,19 @@
 
 
 .App-header {
-  background-color: $color0;
   height: 150px;
   padding: 20px;
   color: white;
+  z-index: 2;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 4em;
+  position: relative;
+  top: 10vh;
+  z-index: 5;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
 }
 
 .App-intro {
@@ -51,10 +56,13 @@
   width: 10vw;
   vertical-align: top;
   margin-left: 2vw;
+  z-index: 2;
 }
 
 .logos--container {
-  z-index: 1
+  z-index: 1;
+  position: relative;
+  top: -45vh;
 }
 
 nav {

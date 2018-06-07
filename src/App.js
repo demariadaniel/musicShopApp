@@ -11,12 +11,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="logos--container">
+          <img src={logoA} className="App-logo-A" alt="logo" />
+          <img src={logoB} className="App-logo-B" alt="logo" />
+          <img src={logoC} className="App-logo-C" alt="logo" />
+        </div>
         <header className="App-header">
-          <div className="logos--container">
-            <img src={logoA} className="App-logo-A" alt="logo" />
-            <img src={logoB} className="App-logo-B" alt="logo" />
-            <img src={logoC} className="App-logo-C" alt="logo" />
-          </div>
           <h1 className="App-title">Welcome to the Shop</h1>
         </header>
         <div>

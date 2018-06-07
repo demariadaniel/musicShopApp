@@ -26,10 +26,10 @@
   color: deeppink; }
 
 .App {
+  background: linear-gradient(#222, #222, darkblue);
   text-align: center;
   width: 100vw;
-  height: 100vh;
-  z-index: 2; }
+  height: 100vh; }
 
 .App-logo-A, .App-logo-B, .App-logo-C {
   position: absolute;
@@ -48,13 +48,16 @@
   animation: App-logo-spin-c infinite 10s linear; }
 
 .App-header {
-  background-color: #222;
   height: 150px;
   padding: 20px;
-  color: white; }
+  color: white;
+  z-index: 2; }
 
 .App-title {
-  font-size: 1.5em; }
+  font-size: 4em;
+  position: relative;
+  top: 10vh;
+  z-index: 5; }
 
 .App-intro {
   font-size: large; }
@@ -63,10 +66,13 @@
   display: inline-block;
   width: 10vw;
   vertical-align: top;
-  margin-left: 2vw; }
+  margin-left: 2vw;
+  z-index: 2; }
 
 .logos--container {
-  z-index: 1; }
+  z-index: 1;
+  position: relative;
+  top: -45vh; }
 
 nav {
   background-color: #222;
