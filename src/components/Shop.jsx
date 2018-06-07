@@ -15,7 +15,7 @@ export default class Shop extends Component {
     const {match} = this.props;
     return (
       <div>
-        <nav className="windows--neon">
+        <nav>
           {this.state.products.map(product => (
             <Link to={`${match.url}/${product.category}`}>
               <button>{product.category}</button>

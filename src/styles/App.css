@@ -28,13 +28,6 @@
 .text--colorG {
   color: deeppink; }
 
-.App {
-  background: linear-gradient(#000, #222, darkblue);
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden; }
-
 .logos--container {
   position: relative; }
 
@@ -84,55 +77,6 @@
   z-index: 4;
   top: -1.25em; }
 
-.App-intro {
-  font-size: large; }
-
-.windows--neon {
-  position: relative;
-  border: 2px solid darkmagenta;
-  border-radius: 5px;
-  background-color: #222; }
-
-.transparent {
-  opacity: 0.9; }
-
-.left {
-  left: 0vw; }
-
-.right {
-  right: 0vw; }
-
-.cart {
-  position: absolute;
-  display: inline-block;
-  width: 10vw;
-  vertical-align: top;
-  z-index: 2; }
-
-nav {
-  background-color: #222;
-  z-index: 2;
-  position: relative; }
-
-.product--imageSize {
-  height: 30vh; }
-
-.shopPage--container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  z-index: 2; }
-
-.shopPage--parent {
-  position: absolute;
-  display: inline-block;
-  width: 70vw;
-  height: 60vh;
-  z-index: 2;
-  left: 50%;
-  transform: translateX(-50%); }
-
 @keyframes App-logo-spin-a {
   0% {
     transform: rotate(0deg);
@@ -172,3 +116,65 @@ nav {
     left: 24%; }
   100% {
     left: 24.5%; } }
+
+.App {
+  background: linear-gradient(#000, #222, darkblue);
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+
+.App-intro {
+  font-size: large; }
+
+.btn {
+  position: relative;
+  z-index: 4; }
+
+.windows--neon {
+  position: relative;
+  border: 2px solid darkmagenta;
+  border-radius: 5px;
+  background-color: #222; }
+
+.transparent {
+  opacity: 0.9; }
+
+.left {
+  left: 0vw; }
+
+.right {
+  right: 0vw; }
+
+.cart {
+  position: absolute;
+  display: inline-block;
+  width: 10vw;
+  vertical-align: top;
+  z-index: 2; }
+
+nav {
+  background-color: #222;
+  z-index: 4;
+  position: relative;
+  top: -2em;
+  border-bottom: 2px solid darkmagenta; }
+
+.product--imageSize {
+  height: 30vh; }
+
+.shopPage--container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  z-index: 2; }
+
+.shopPage--parent {
+  position: absolute;
+  display: inline-block;
+  width: 70vw;
+  height: 60vh;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%); }

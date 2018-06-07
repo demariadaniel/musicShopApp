@@ -5,7 +5,9 @@ const Splash =()=>(
   <div>
     <h1>Welcome!</h1>
     <Link to="/shop">
-      <button>Log In</button>
+      <button className="btn">
+        Log In
+      </button>
     </Link>
   </div>
 )
