@@ -8,6 +8,9 @@ import logoC from "./logo.c.svg";
 import "./styles/App.css";
 
 class App extends Component {
+  componentWillMount(){
+    // axios.get('/products')
+  }
   render() {
     return (
       <div className="App">

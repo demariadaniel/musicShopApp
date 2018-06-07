@@ -3,7 +3,7 @@ const app = express();
 require('dotenv').config()
 
 
-// app.use(express.static(__dirname + './../build'))
+app.use(express.static(__dirname + './../build'))
 
 app.listen(process.env.PORT || 8080, () => {
   console.log('Server Started');
@@ -14,6 +14,6 @@ app.get('/env', (req, res)=>{
   res.send({"key" : process.env.API_KEY})
 })
 
-// app.get('*', (req, res) => { 
-//   res.sendFile('index.html',{root: __dirname + './../build'}) 
-// });
+app.get('*', (req, res) => { 
+  res.sendFile('index.html',{root: __dirname + './../build'}) 
+});

@@ -3,13 +3,14 @@ import { Switch, Route, Link } from "react-router-dom";
 import Amps from "../data/Amps";
 import Guitars from "../data/Guitars";
 import Effects from "../data/Effects";
+import Posters from "../data/Posters";
 import Cart from './Cart';
 import ShopPage from "./ShopPage";
 import ItemDetails from "./ItemDetails";
 
 export default class Shop extends Component {
   state = {
-    products: [Amps, Guitars, Effects]
+    products: [Amps, Guitars, Effects, Posters]
   };
   render() {
     const {match} = this.props;
