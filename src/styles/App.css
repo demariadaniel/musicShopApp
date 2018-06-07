@@ -1,0 +1,122 @@
+.text--color1 {
+  color: #E6F5F7; }
+
+.text--color0 {
+  color: #222; }
+
+.text--colorA {
+  color: magenta; }
+
+.text--colorB {
+  color: darkblue; }
+
+.text--colorC {
+  color: #51BFB5; }
+
+.text--colorD {
+  color: #9FE3DD; }
+
+.text--colorE {
+  color: darkmagenta; }
+
+.text--colorF {
+  color: #E3FEBE; }
+
+.text--colorG {
+  color: deeppink; }
+
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2; }
+
+.App-logo-A, .App-logo-B, .App-logo-C {
+  position: absolute;
+  left: 0vw;
+  z-index: 1; }
+
+.App-logo-A {
+  animation: App-logo-spin-a infinite 20s linear; }
+
+.App-logo-B {
+  opacity: .66;
+  animation: App-logo-spin-b infinite 15s linear; }
+
+.App-logo-C {
+  opacity: .33;
+  animation: App-logo-spin-c infinite 10s linear; }
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white; }
+
+.App-title {
+  font-size: 1.5em; }
+
+.App-intro {
+  font-size: large; }
+
+.cart {
+  display: inline-block;
+  width: 10vw;
+  vertical-align: top;
+  margin-left: 2vw; }
+
+.logos--container {
+  z-index: 1; }
+
+nav {
+  background-color: #222;
+  margin: 2vh; }
+
+.product--imageSize {
+  height: 30vh; }
+
+.shopPage--container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.shopPage--parent {
+  display: inline-block;
+  width: 85vw;
+  height: 60vh; }
+
+.windows--neon {
+  border: 2px solid darkmagenta;
+  border-radius: 5px;
+  background-color: #222; }
+
+@keyframes App-logo-spin-a {
+  0% {
+    transform: rotate(0deg);
+    opacity: .75; }
+  50% {
+    opacity: .25; }
+  100% {
+    transform: rotate(360deg);
+    opacity: .75; } }
+
+@keyframes App-logo-spin-b {
+  0% {
+    transform: rotate(180deg);
+    opacity: .75; }
+  50% {
+    opacity: .33; }
+  100% {
+    transform: rotate(540deg);
+    opacity: .75; } }
+
+@keyframes App-logo-spin-c {
+  0% {
+    transform: rotate(270deg);
+    opacity: .5; }
+  50% {
+    opacity: .33; }
+  100% {
+    transform: rotate(630deg);
+    opacity: .5; } }

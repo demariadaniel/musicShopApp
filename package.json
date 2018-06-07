@@ -1,0 +1,22 @@
+{
+  "name": "shopapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "material-ui": "^0.20.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-router": "^4.3.0",
+    "react-router-dom": "^4.3.0",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": " node-sass app.scss app.css; react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
