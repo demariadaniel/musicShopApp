@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ItemDetails = ({ item, match, category }) => (
   <div className="itemDetails--container windows--neon">
-    <h2 className="text--color1">
+    <h2 className="text--colorF">
       {item.brand} {item.model}
     </h2>
     <img 
