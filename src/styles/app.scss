@@ -37,12 +37,18 @@
   right: 0vw;
 }
 
-.cart {
+.cart, .theme {
   position: absolute;
   display: inline-block;
   width: 10vw;
   vertical-align: top;
   z-index: 2;
+  padding-bottom: 2em;
+}
+
+.cart p {
+  margin-bottom: 0px;
+  color: $colorD;
 }
 
 nav {

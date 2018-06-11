@@ -5,6 +5,7 @@ import Guitars from "../data/Guitars";
 import Effects from "../data/Effects";
 import Posters from "../data/Posters";
 import Cart from './Cart';
+import Themes from './Themes';
 import ShopPage from "./ShopPage";
 import ItemDetails from "./ItemDetails";
 
@@ -23,7 +24,7 @@ export default class Shop extends Component {
             </Link>
           ))}
         </nav>
-        <Cart className="left" />
+        <Themes className="left" />
         <div className="shopPage--parent windows--neon transparent">
           <Switch>
             {this.state.products.map(product => (
