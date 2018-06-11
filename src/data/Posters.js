@@ -58,11 +58,11 @@ const Posters = {
     image: "/posters/phish.png"
   },
   {
-    brand: 'Pink Space',
+    brand: 'Star Wars',
     model: '',
     price: 50,
     type: 'poster',
-    image: "/posters/pinkspace.jpg"
+    image: "/posters/starwars.jpg"
   },
   {
     brand: 'Sabbath Brewing',

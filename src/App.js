@@ -4,21 +4,24 @@ import Shop from "./components/Shop";
 import Splash from './components/Splash';
 import { Logo } from "./components/Logo";
 import "./styles/App.css";
-const color1 = "darkblue";
-const color2 = "darkmagenta";
-const color3 = "deeppink";
+import {HTML, colorB, colorE, colorG} from './utils/colors';
+    
 
 class App extends Component {
+  state = {
+    colors: [colorB, colorE, colorG]
+  }
   componentWillMount(){
     // axios.get('/products')
   }
   render() {
+    console.log(colorB(), colorE(), colorG())
     return (
       <div className="App">
         <div className="logos--container">
-          <Logo className="App-logo-A" fill={color1} />
-          <Logo className="App-logo-B" fill={color2} />
-          <Logo className="App-logo-C" fill={color3} />
+          <Logo className="App-logo-A" fill={colorB()} />
+          <Logo className="App-logo-B" fill={colorE()} />
+          <Logo className="App-logo-C" fill={colorG()} />
         </div>
           <h1 className="App-title">
             Welcome to the Shop
