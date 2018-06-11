@@ -31,18 +31,18 @@ const theme2 = {
 }
 
 const theme3 = {
-  name: 'Spring',
+  name: 'Heat',
   colors: {
-    "--color1" : "#E6F5F7",
+    "--color1" : "#fff",
     "--color0" : "#222",
     "--color000": "#000",
     "--colorA" : "magenta",
-    "--colorB" : "darkgreen",
+    "--colorB" : "darkred",
     "--colorC" : "#51BFB5",
     "--colorD" : "#9FE3DD",
-    "--colorE" : "lightgreen",
+    "--colorE" : "gold",
     "--colorF" : "#E3FEBE",
-    "--colorG" : "green"
+    "--colorG" : "red"
   }
 }
 
