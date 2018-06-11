@@ -10,7 +10,9 @@ const ItemDetails = ({ item, match, category }) => (
     <img 
       className="product--imageSize"
       src={`${process.env.PUBLIC_URL}/images/${item.image}`} />
-    <p>{item.price}</p>
+    <p className="text--color1">
+      ${item.price}
+    </p>
     <Link to={`/shop/${category}`}>
       <button>Back</button>
     </Link>

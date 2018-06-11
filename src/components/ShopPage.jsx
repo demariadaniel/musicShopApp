@@ -13,7 +13,6 @@ const ShopPage = ({ inventory, match, category }) => (
             <p>
               {item.brand} {item.model}
             </p>
-            <p>{item.price}</p>
           </div>
         </Link>
       ))}

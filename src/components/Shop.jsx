@@ -11,7 +11,7 @@ import ItemDetails from "./ItemDetails";
 
 export default class Shop extends Component {
   state = {
-    products: [Amps, Guitars, Effects, Posters]
+    products: [Posters]
   };
   render() {
     const {match} = this.props;

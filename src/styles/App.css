@@ -137,6 +137,15 @@ html {
   100% {
     -webkit-text-stroke: 2px var(--color1); } }
 
+a:visited {
+  color: var(--colorC); }
+
+a:active {
+  color: var(--colorG); }
+
+a {
+  color: var(--colorD); }
+
 .App {
   background: linear-gradient(var(--color000), var(--color0), var(--colorB));
   text-align: center;
@@ -175,8 +184,7 @@ html {
   padding-bottom: 2em; }
 
 .cart p {
-  margin-bottom: 0px;
-  color: var(--colorD); }
+  margin-bottom: 0px; }
 
 nav {
   background-color: var(--color0);
@@ -186,7 +194,7 @@ nav {
   border-bottom: 2px solid var(--colorE); }
 
 .product--imageSize {
-  height: 30vh; }
+  height: 45vh; }
 
 .shopPage--container {
   display: flex;

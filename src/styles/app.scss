@@ -1,6 +1,18 @@
 @import 'colors';
 @import 'titles';
 
+a:visited {
+  color: $colorC
+}
+
+a:active {
+  color: $colorG
+}
+
+a {
+  color: $colorD
+}
+
 .App {
   background: linear-gradient( $color000, $color0, $colorB );
   text-align: center;
@@ -48,7 +60,6 @@
 
 .cart p {
   margin-bottom: 0px;
-  color: $colorD;
 }
 
 nav {
@@ -60,7 +71,7 @@ nav {
 }
 
 .product--imageSize {
-  height: 30vh;
+  height: 45vh;
 }
 
 .shopPage--container {

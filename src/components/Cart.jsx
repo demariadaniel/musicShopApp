@@ -5,7 +5,9 @@ const Cart =({className})=>(
     <h3 className="text--color1">
       Cart
     </h3>
-    <p>Subtotal: $0</p>
+    <p className="text--colorD">
+      Subtotal: $<span className="text--color1">0</span>
+    </p>
   </div>
 )
 
