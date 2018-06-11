@@ -9,19 +9,26 @@ import {HTML, colorB, colorE, colorG} from './utils/colors';
 
 class App extends Component {
   state = {
-    colors: [colorB, colorE, colorG]
+    colors: [colorB(), colorE(), colorG()]
+  }
+  changeTheme =(index)=>{
+    this.setState({
+      currentTheme: index,
+      colors: [colorB(), colorE(), colorG()]
+    })
   }
   componentWillMount(){
     // axios.get('/products')
   }
   render() {
     console.log(colorB(), colorE(), colorG())
+    const {colors} = this.state;
     return (
       <div className="App">
         <div className="logos--container">
-          <Logo className="App-logo-A" fill={colorB()} />
-          <Logo className="App-logo-B" fill={colorE()} />
-          <Logo className="App-logo-C" fill={colorG()} />
+          <Logo className="App-logo-A" fill={colors[0]} />
+          <Logo className="App-logo-B" fill={colors[1]} />
+          <Logo className="App-logo-C" fill={colors[2]} />
         </div>
           <h1 className="App-title">
             Welcome to the Shop
@@ -41,7 +48,11 @@ class App extends Component {
             />
             <Route
               path="/shop"
-              render={routeProps => <Shop {...routeProps} />}
+              render={routeProps => 
+                <Shop 
+                  {...routeProps} 
+                  changeTheme={(index)=> this.changeTheme(index)} 
+                  />}
             />
           </Switch>
         </div>

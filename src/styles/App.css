@@ -8,7 +8,8 @@ html {
   --colorD: #9FE3DD;
   --colorE: darkmagenta;
   --colorF: #E3FEBE;
-  --colorG: deeppink; }
+  --colorG: deeppink;
+  transition: all 2s ease; }
 
 .text--color1 {
   color: var(--color1); }

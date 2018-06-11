@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {theme1, theme2, theme3} from './../utils/colors';
+import {HTML, theme1, theme2, theme3} from './../utils/colors';
 
 class Themes extends Component {
   state = {
@@ -16,6 +16,7 @@ class Themes extends Component {
     this.setState({
       currentTheme: index
     })
+    this.props.changeTheme(index)
   }
   render(){
     return(

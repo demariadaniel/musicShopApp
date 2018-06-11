@@ -24,7 +24,7 @@ export default class Shop extends Component {
             </Link>
           ))}
         </nav>
-        <Themes className="left" />
+        <Themes changeTheme={this.props.changeTheme} />
         <div className="shopPage--parent windows--neon transparent">
           <Switch>
             {this.state.products.map(product => (
