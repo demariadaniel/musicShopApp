@@ -10,6 +10,10 @@ const ShopPage = ({ inventory, match, category }) => (
       {inventory.map((item, i) => (
         <Link to={`${match.url}/${i}`}>
           <div class="windows--neon product--window">
+            <img 
+              className={"product--image__preview"}
+              src={`${process.env.PUBLIC_URL}/images/${item.image}`} 
+              />
             <p>
               {item.brand} {item.model}
             </p>

@@ -145,14 +145,16 @@ a:active {
   color: var(--colorG); }
 
 a {
-  color: var(--colorD); }
+  color: var(--colorD);
+  transition: all 0.8s ease-out; }
 
 .App {
   background: linear-gradient(var(--color000), var(--color0), var(--colorB));
   text-align: center;
   width: 100vw;
   min-height: 125vh;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: all 0.8s ease-out; }
 
 .App-intro {
   font-size: large; }
@@ -165,7 +167,8 @@ a {
   position: relative;
   border: 2px solid var(--colorE);
   border-radius: 5px;
-  background-color: var(--color0); }
+  background-color: var(--color0);
+  transition: all 0.8s ease-out; }
 
 .transparent {
   opacity: 0.9; }
@@ -192,10 +195,58 @@ nav {
   z-index: 4;
   position: relative;
   top: -2em;
-  border-bottom: 2px solid var(--colorE); }
+  border-bottom: 2px solid var(--colorE);
+  transition: all 0.8s ease-out; }
 
-.product--imageSize {
-  height: 45vh; }
+.product--image {
+  height: 45vh;
+  position: relative;
+  left: -5vw; }
+
+.product--image__preview {
+  height: 15vh;
+  opacity: .7; }
+
+.product--text {
+  display: inline-block;
+  position: relative;
+  width: 25vw;
+  left: 5vw;
+  color: var(--colorD);
+  transition: all 0.8s ease-out; }
+
+.product--window {
+  margin: 0.5em 1em;
+  padding: 0.5em;
+  width: 10vw;
+  height: 25vh;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.8s ease-out;
+  z-index: 3; }
+  .product--window p {
+    z-index: 3;
+    position: absolute;
+    top: -1em;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.4s ease-out; }
+  .product--window img {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease-out; }
+
+.product--window:hover {
+  box-shadow: 0 0 10px #fff; }
+  .product--window:hover .product--image__preview {
+    height: 25vh;
+    opacity: 1; }
+  .product--window:hover p {
+    color: var(--colorF); }
 
 .shopPage--container {
   display: flex;
@@ -213,7 +264,5 @@ nav {
   left: 50%;
   transform: translateX(-50%); }
 
-.product--window {
-  margin: 0.5em 1em;
-  padding: 0.5em;
-  width: 10vw; }
+svg {
+  transition: all 0.8s ease-out; }

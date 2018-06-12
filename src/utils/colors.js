@@ -24,9 +24,9 @@ const theme2 = {
     "--colorB" : "blue",
     "--colorC" : "#51BFB5",
     "--colorD" : "#9FE3DD",
-    "--colorE" : "dodgerblue",
+    "--colorE" : "teal",
     "--colorF" : "#E3FEBE",
-    "--colorG" : "heatherblue"
+    "--colorG" : "darkblue"
   }
 }
 
@@ -38,11 +38,11 @@ const theme3 = {
     "--color000": "#000",
     "--colorA" : "magenta",
     "--colorB" : "darkred",
-    "--colorC" : "#51BFB5",
-    "--colorD" : "#9FE3DD",
+    "--colorC" : "royalblue",
+    "--colorD" : "lightskyblue",
     "--colorE" : "gold",
     "--colorF" : "#E3FEBE",
-    "--colorG" : "red"
+    "--colorG" : "#FF530D"
   }
 }
 
@@ -72,4 +72,5 @@ export {
   color000,
   theme1, 
   theme2, 
-  theme3};
+  theme3
+};
